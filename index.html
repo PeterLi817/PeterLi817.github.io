@@ -1,11 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Peter Li</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter Li | CS Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Peter Li</h1>
-  <p>Welcome to my website!</p>
-</body>
+  <header>
+    <h1>Peter Li</h1>
+    <p>Computer Science Student & Photographer | Exploring creativity through code and imagery</p>
+  </header>
 
+  <section class="projects">
+    <div class="card">
+      <h2>🏀 Sports Analytics Dashboard</h2>
+      <p>A web app built with Python and D3.js to visualize real-time basketball stats and trends.</p>
+      <button onclick="openLink('https://github.com/peterli/sports-analytics')">View Project</button>
+    </div>
+
+    <div class="card">
+      <h2>📸 Portfolio Site Generator</h2>
+      <p>A dynamic site builder that integrates photo metadata and creates elegant gallery layouts.</p>
+      <button onclick="openLink('https://github.com/peterli/photo-portfolio')">View Project</button>
+    </div>
+
+    <div class="card">
+      <h2>🧠 AI-Powered Study Assistant</h2>
+      <p>An AI chatbot built using OpenAI API that helps students review CS concepts interactively.</p>
+      <button onclick="openLink('https://github.com/peterli/study-assistant')">View Project</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Peter Li | Made with ❤️ and ChatGPT
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
