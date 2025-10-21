@@ -8,48 +8,55 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Peter Li — VS Code Portfolio</h1>
-  </header>
+
   <main>
-    <nav class="sidebar">
+    <nav class="sidebar" data-collapsed="false">
+      <div class="explorer">EXPLORER</div>
+      <div class="projName" role="button" tabindex="0" aria-expanded="true">
+      <p><span class="caret" aria-hidden="true">^</span> Peter_Li_code </p>
+    </div>
+
+      <div class="file-list">
       <ul>
-        <li>index.html</li>
-        <li>style.css</li>
-        <li>script.js</li>
-        <li>about.md</li>
-        <li>projects.json</li>
+        <li aria-current="page"><a href="index.html">projects</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="style.css">style.css</a></li>
       </ul>
+      </div>
     </nav>
 
     <div class="content">
+      <div class="tab-bar">
+        <div class="tab active">projects</div>
+        <div class="tab">about</div>
+      </div>
       <div class="project">
         <h2>COOT Compas</h2>
         <p>This project aims to design a organizational system for the Colby College Outdoor Orientation Trip program. It is a full stack project powered by Flask.</p>
-        <button onclick="openLink('https://github.com/peterli/sports-analytics')">This link Doesnt work</button>
+        <button onclick="openLink('')">This link Doesnt work</button>
       </div>
 
       <div class="project">
-        <h2>📸 Portfolio Site Generator</h2>
-        <p>A dynamic site builder that integrates photo metadata and creates elegant gallery layouts.</p>
-        <button onclick="openLink('https://github.com/peterli/photo-portfolio')">Open File</button>
+        <h2>CPT Analysis</h2>
+        <p>A data analysis project to detect ground layers via cone penetration test data. Leverages various machine learning techniques in python.</p>
+        <button onclick="openLink('https://github.com/peterli/photo-portfolio')">Open</button>
       </div>
 
       <div class="project">
-        <h2>🧠 AI-Powered Study Assistant</h2>
-        <p>An AI chatbot built using OpenAI API that helps students review CS concepts interactively.</p>
-        <button onclick="openLink('https://github.com/peterli/study-assistant')">Open File</button>
+        <h2>IDK</h2>
+        <p>I dont really have another CS project that comes to mind. I will probably fill this in later. Check out my sports photography portfolio.</p>
+        <button onclick="openLink('https://peterliphoto.myportfolio.com/')">Open</button>
       </div>
     </div>
   </main>
   <footer>
     © 2025 Peter Li | Built in VS Code style 💻
+    <div class="footer-socials">
+      <button onclick="openLink('https://github.com/PeterLi817')">GitHub</button>
+      <button onclick="openLink('https://www.linkedin.com/in/peter-li-765787274/')">LinkedIn</button>
+    </div>
   </footer>
 
-  <script>
-    function openLink(url) {
-      window.open(url, '_blank');
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
