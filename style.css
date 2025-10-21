@@ -130,8 +130,9 @@ main {
 }
 
 .content {
+  background: #333334;
   flex: 1;
-  padding: 2rem;
+  /* padding: 2rem; */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -139,7 +140,7 @@ main {
 }
 
 .project {
-  background: #252526;
+  background: #333334;
   padding: 1.5rem;
   transition: background 0.2s;
 }
@@ -191,12 +192,17 @@ footer {
   gap: 0.5rem;
 }
 
+.footer-info {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #9e9b9b;
+}
+
 .footer-socials button {
   background: #3a3a3a;
   color: #e6e6e6;
   border: none;
   padding: 0.35rem 0.6rem;
-  border-radius: 4px;
   cursor: pointer;
   font-size: 0.85rem;
 }
@@ -205,22 +211,30 @@ footer {
   background: #505050;
 }
 
-/* Tab bar to mimic VS Code editor tabs */
 .tab-bar {
   display: flex;
-  gap: 0.4rem;
-  padding: 0.4rem 0.6rem;
   align-items: center;
   background: transparent;
   margin-bottom: 0.6rem;
 }
 
+
+.tab-bar::after {
+  content: "";
+  flex: 1; /* takes up remaining space */
+  background: #1f1f1f;
+  height: 100%;
+}
+
+.tab-bar a{
+  text-decoration: none;
+}
+
 .tab-bar .tab {
+  /* background: transparent; */
   background: #1f1f1f;
   color: #d4d4d4;
   padding: 0.45rem 0.75rem;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
   border: 1px solid transparent;
   border-bottom: 1px solid #1f1f1f; /* hide seam when inactive */
   cursor: pointer;
@@ -232,12 +246,8 @@ footer {
 }
 
 .tab-bar .tab.active {
-  background: #252526;
+  background: #333334;
   color: #ffffff;
   border-color: #3c3c3c;
   border-bottom-color: transparent; /* visually attach to content */
-}
-
-.content {
-  padding-top: 1rem;
 }
