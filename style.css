@@ -68,13 +68,17 @@ header h1 {
 
 .sidebar li {
   width: 100%;
-  display: block;
-  padding: 0.6rem 0.75rem;
+  display: flex;
+  padding: 0.4rem 0.75rem;
   margin: 0 0 0 0;
   color: #e4bb82;
   cursor: pointer;
 }
 
+.file-list img{
+  width: 20px;
+  height: auto;
+}
 
 .sidebar li:hover {
   background: rgba(220,220,170,0.03);
@@ -115,6 +119,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: auto;
+  margin-bottom: 2rem;
 }
 
 .project {
@@ -163,7 +168,9 @@ footer {
   padding: 0.6rem 1rem;
   color: #9e9b9b;
   font-size: 0.8rem;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 /* Footer socials (bottom-left) */
