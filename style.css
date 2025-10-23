@@ -211,6 +211,12 @@ footer {
   margin-bottom: 0.6rem;
 }
 
+.tab-bar img {
+  width: 20px;
+  height: 20px;
+  display: block; /* avoid baseline alignment shifts */
+}
+
 
 .tab-bar::after {
   content: "";
@@ -232,6 +238,9 @@ footer {
   /* border-bottom: 1px solid #1f1f1f; hide seam when inactive */
   cursor: pointer;
   font-size: 0.95rem;
+  display: inline-flex; /* align icon and text */
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .tab-bar .tab:hover {
